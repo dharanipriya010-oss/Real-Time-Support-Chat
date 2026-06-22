@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatStream - Room</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Your existing CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="chat-page">
+
+    <div class="chat-container">
+        <!-- Top bar layout -->
+        <header class="chat-header">
+            <h1><i class="fas fa-comments"></i> ChatStream</h1>
+            <a href="index.html" class="btn" id="leave-btn">Leave Room</a>
+        </header>
+
+        <!-- Main section split into sidebar and messages -->
+        <main class="chat-main">
+            <!-- Left Sidebar -->
+            <div class="chat-sidebar">
+                <h3><i class="fas fa-home"></i> Room Name</h3>
+                <h2 id="room-name">Loading...</h2>
+                
+                <h3><i class="fas fa-users"></i> Users</h3>
+                <ul id="users">
+                    <!-- Active room users will be injected here by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Right Message Area (Where messages display) -->
+            <div class="chat-messages">
+                <!-- Incoming chat messages will be injected here by JavaScript -->
+            </div>
+        </main>
+
+        <!-- Bottom interactive section for typing/sending -->
+        <div class="chat-form-container">
+            <!-- Typing Indicator dynamic display box -->
+            <div id="typing-indicator" style="padding: 5px 20px; font-style: italic; color: #b3b3b3; min-height: 25px;"></div>
+            
+            <!-- Message submission form -->
+            <form id="chat-form">
+                <input
+                    id="msg"
+                    type="text"
+                    placeholder="Enter Message..."
+                    required
+                    autocomplete="off"
+                />
+                <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Required WebSocket scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Connecting your client-side JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

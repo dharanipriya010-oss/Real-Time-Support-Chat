@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatStream - Join</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="join-page">
+    <div class="join-container">
+        <header class="join-header">
+            <h1><i class="fas fa-comments"></i> ChatStream</h1>
+        </header>
+        <main class="join-main">
+            <form action="chat.html" method="GET">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="General Chat">General Chat</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
