@@ -9,14 +9,16 @@ Features
 - Live typing indicator ("User is typing...")
 
 Tech Stack
-- Backend:** Node.js, Express
-- Real-Time:** Socket.io
-- Frontend:** HTML, CSS, JavaScript
+- Backend: Node.js, Express
+- Real-Time: Socket.io
+- Frontend: HTML, CSS, JavaScript
 
  Setup Instructions
 
 1. Open your terminal in the project folder and install dependencies:
    bash:
    npm install
-Start the server:http://localhost:3000Open your browser and go to:
-http://localhost:3000To test real-time chatting, open a second window in InPrivate/Incognito mode and log in with a different username!
+Start the server: http://localhost:3000
+Open your browser and go to:
+      http://localhost:3000
+To test real-time chatting, open a second window in InPrivate/Incognito mode and log in with a different username!
